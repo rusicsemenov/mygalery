@@ -9,8 +9,8 @@
 </head>
 <body>
 	<video autoplay="true" loop="loop">
-		<source src="1.mp4" type="video/mp4">
-		<!-- <source src="2.mp4" type="video/mp4"> -->
+		<!-- <source src="1.mp4" type="video/mp4"> -->
+		<source src="2.mp4" type="video/mp4">
 		<!-- <source src="3.mp4" type="video/mp4"> -->
 		<!-- <source src="3.webm" type="video/webm"> -->
 	</video>
