@@ -305,7 +305,7 @@ video {
 .admin input {
   display: block;
 }
-/* line 173, ../sass/main.sass */
+/* line 172, ../sass/main.sass */
 .admin .ajaxRespond, .admin .sortFile {
   width: 100%;
   display: -webkit-flex;
@@ -323,20 +323,20 @@ video {
   -webkit-transition: box-shadow 300ms;
   transition: box-shadow 300ms;
 }
-/* line 181, ../sass/main.sass */
+/* line 180, ../sass/main.sass */
 .admin .ajaxRespond-imgPreview, .admin .sortFile-imgPreview {
   margin: 5px;
   -webkit-flex: 0 1 200px;
   flex: 0 1 200px;
 }
-/* line 184, ../sass/main.sass */
+/* line 183, ../sass/main.sass */
 .admin .ajaxRespond-imgPreview:hover, .admin .sortFile-imgPreview:hover {
   -moz-box-shadow: 0 0 2px 1px #FFF;
   -webkit-box-shadow: 0 0 2px 1px #FFF;
   box-shadow: 0 0 2px 1px #FFF;
 }
 
-/* line 187, ../sass/main.sass */
+/* line 186, ../sass/main.sass */
 .preloader {
   width: 100px;
   height: 100px;
@@ -346,7 +346,7 @@ video {
   margin: 50px;
   display: inline-block;
 }
-/* line 195, ../sass/main.sass */
+/* line 194, ../sass/main.sass */
 .preloader:after, .preloader:before {
   content: "";
   display: block;
@@ -355,7 +355,7 @@ video {
   border-radius: 50%;
 }
 
-/* line 201, ../sass/main.sass */
+/* line 200, ../sass/main.sass */
 .preloader-1:after {
   position: absolute;
   top: -4px;
