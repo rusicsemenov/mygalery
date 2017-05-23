@@ -9,16 +9,15 @@
 </head>
 <body>
 	<video autoplay="true" loop="loop">
-		<!-- <source src="1.mp4" type="video/mp4"> -->
-		<source src="2.mp4" type="video/mp4">
+		<source src="1.mp4" type="video/mp4">
+		<!-- <source src="2.mp4" type="video/mp4"> -->
 		<!-- <source src="3.mp4" type="video/mp4"> -->
-		<!-- <source src="3.webm" type="video/webm"> -->
 	</video>
 
 	<div class="header">
 		<p class='logo'>
 		 	Photo Gallery
-		<p>тестовая станица</p>
+		<p>тестовая галерея, для скрола картинок можно исмользовать кновки вправо/влево</p>
 		<div class='img_big'>
 			<span class="img_prev"></span>
 			<img src="/img/photo/1.jpg" alt="" id="test">
@@ -121,7 +120,6 @@
 
 		<h2>Загрузка файлов на сервер</h2>
 		<hr>
-		<!-- <input type="text" name="fileText" id="fileText" > -->
 		<input type="file" name="fileName" id="fileName" multiple="multiple" accept="image/jpeg,image/png,image/gif">
 		<input type="submit" value="Отправить">
 

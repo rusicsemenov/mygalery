@@ -8,12 +8,12 @@ function consInfo() {
 
 // Обработчик нажатия кнопок
 window.onkeyup = pressed;
-function pressed(e) 
+function pressed(e)
 	{
 		// console.log(e.keyCode);
 		key = e.keyCode || e.which;
 		//  Кнопка ESC
-		// if(key == 27) 
+		// if(key == 27)
 			// fx.boxout();
 		// Кнопка влево
 		if(key == 37)
@@ -36,7 +36,7 @@ $(document).ready(function() {
 		files = this.files;
 	});
 
-	$('input[type=submit]').click(function (event) 
+	$('input[type=submit]').click(function (event)
 	{
 		event.preventDefault();
 
@@ -58,29 +58,31 @@ $(document).ready(function() {
 						processData: false, // Не обрабатываем файлы (Don't process the files)
 						contentType: false, // Так jQuery скажет серверу что это строковой запрос
 						success: function( respond, textStatus, jqXHR ){
-								if( typeof respond.error === 'undefined' ){
-										var files_path = respond.files,
-												errors = respond.errors,
-												html_errors = '',
-												html = '';
+							console.log(respond);
+							if( typeof respond.error === 'undefined' ){
+									var files_path = respond.files,
+											errors = respond.errors,
+											html_errors = '',
+											html = '';
 
-										$.each( errors, function( key, val ){ html_errors += val; } )
-										$.each( files_path, function( key, val ){ html += '<img src="' + val + '" class="ajaxRespond-imgPreview">'; } )
-										$('input[type=file]').val('');
-										resObj
-											.html('')
-											.prepend( html_errors )
-											.append( html );
-								}
-								else{
-										console.log('ОШИБКИ ОТВЕТА сервера: ' + respond.error );
-								}
-								$('.preloader').css({'display' : 'none'});
+									$.each( errors, function( key, val ){ html_errors += val; } );
+									$.each( files_path, function( key, val ){ html += '<img src="' + val + '" class="ajaxRespond-imgPreview">'; } );
+
+									$('input[type=file]').val('');
+									resObj
+										.html('')
+										.prepend( html_errors )
+										.append( html );
+							}
+							else{
+									console.log('ОШИБКИ ОТВЕТА сервера: ' + respond.error );
+							}
+							$('.preloader').css({'display' : 'none'});
 						},
 						error: function( jqXHR, textStatus, errorThrown ){
 								console.log('ОШИБКИ AJAX запроса: ' + textStatus );
 						}
-					
+
 					});
 
 
@@ -104,7 +106,7 @@ $(document).ready(function() {
 		if (dir[1] == 'prev')
 		{
 			var par = $('.item_active').prev();
-		} 
+		}
 		else
 		{
 			var par = $('.item_active').next();
@@ -122,7 +124,7 @@ $(document).ready(function() {
 
 		$('#test')
 			.fadeOut('slow', function(){
-				
+
 				$(this)
 					.attr({'src':url[0]})
 					.fadeIn('slow');
@@ -142,7 +144,7 @@ $(document).ready(function() {
 
 		$('#test')
 			.fadeOut('slow', function(){
-				
+
 				$(this)
 					.attr({'src':url[0]})
 					.fadeIn('slow', function () {
