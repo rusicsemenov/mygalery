@@ -326,8 +326,8 @@ video {
 /* line 181, ../sass/main.sass */
 .admin .ajaxRespond-imgPreview, .admin .sortFile-imgPreview {
   margin: 5px;
-  -webkit-flex: 1 1 200px;
-  flex: 1 1 200px;
+  -webkit-flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 /* line 184, ../sass/main.sass */
 .admin .ajaxRespond-imgPreview:hover, .admin .sortFile-imgPreview:hover {

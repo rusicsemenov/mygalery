@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Test page</title>
-	<link href="/css/main.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
+	<link href="/css/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -21,7 +21,7 @@
 		<p>тестовая станица</p>
 		<div class='img_big'>
 			<span class="img_prev"></span>
-			<img src="http://test/img/photo/1.jpg" alt="" id="test">
+			<img src="/img/photo/1.jpg" alt="" id="test">
 			<span class="img_next"></span>
 		</div>
 	</div>
@@ -131,16 +131,16 @@
 	<h2>Загруженные ранее файлы</h2>
 	<hr>
 	<div class="sortFile">
-		
+
 <?php
-	$dir = 'img/upload/thumbnail/';	
+	$dir = 'img/upload/thumbnail/';
 	$files = scandir($dir);
 
 	foreach ($files as $value) {
 		if ($value != '.' && $value != '..')
 			echo '<img src="' . $dir . $value . '" class="ajaxRespond-imgPreview">';
 	}
-	
+
 ?>
 
 	</div>

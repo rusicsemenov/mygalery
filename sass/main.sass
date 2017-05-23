@@ -2,7 +2,7 @@
 @import "compass/css3.scss"
 @import "compass/utilities/general/clearfix"
 
-@font-face 
+@font-face
 	font-family: 'gta'
 	src: url("/fonts/pricedown bl.ttf")
 	font-weight: normal
@@ -21,7 +21,7 @@ body
 	position: relative
 	background-size: cover
 	color: #FFF
-	
+
 
 video
 	position: fixed
@@ -65,7 +65,7 @@ video
 	img
 		max-width: 100%
 		max-height: 100vh
-	
+
 .logo
 	display: inline-block
 	border: 2px solid #fff
@@ -105,7 +105,7 @@ video
 			height: 250px
 		&:nth-child(3n)
 			height: 180px
-		&:hover 
+		&:hover
 			+animation(filters 500ms ease-in-out forwards)
 
 			@keyframes filters
@@ -162,7 +162,7 @@ video
 @media all and (max-width: 350px)
 	.photo
 		column-count: 1
-		
+
 .admin
 	min-height: 100vh
 	padding: 20px
@@ -180,9 +180,9 @@ video
 		+transition(300ms box-shadow)
 		&-imgPreview
 			margin: 5px
-			+flex(1 1 200px)
+			+flex(0 1 200px)
 			&:hover
-				+box-shadow(0 0 2px 1px #FFF) 
+				+box-shadow(0 0 2px 1px #FFF)
 
 .preloader
 	width: 100px
@@ -206,11 +206,11 @@ video
 	border-top-color: orangered
 	border-bottom-color: orangered
 	animation: spinny 1s linear infinite
-	
+
 @keyframes spinny
 	0%
 		transform: rotate(0deg) scale(1)
 	50%
 		transform: rotate(45deg) scale(1.2)
 	100%
-		transform: rotate(360deg) scale(1)		
+		transform: rotate(360deg) scale(1)
